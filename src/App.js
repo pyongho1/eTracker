@@ -32,10 +32,62 @@ function App() {
   return (
     <div className='mainContainer'>
       <NavBar />
-      <h1>eTracker</h1>
-      <p>Enter a message:</p>
-      <input type="text" value={message} onChange={handleInputChange} />
-      <button onClick={handleSubmit}>Save</button>
+      <img src="/logo2.png" alt='eTracker' />
+      <div className='container'>
+        <h2>Keep track of your finance</h2>
+        <button>See more</button>
+        <input type="text" value={message} onChange={handleInputChange} />
+        <button onClick={handleSubmit}>Save</button>
+
+      </div>
+      {/* <div className='buttonContainer'>
+        <div>box one</div>
+        <div>box two</div>
+        <div>box three</div>
+      </div> */}
+      <div class="container text-center">
+        <div class="row row-cols-3 boxContainer">
+          <div class="col boxContain">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Enter a new expense</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col boxContain">
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Expense History</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col boxContain">
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Expense Analytics</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col boxContain">
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">ETC</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

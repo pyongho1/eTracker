@@ -1,13 +1,6 @@
 * {
     margin: 0;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* min-height: 100vh; */
-    /* margin: 0; */
+    width: 100%;
 }
 
 .mainContainer {
@@ -15,6 +8,62 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
 
+.mainContainer>img {
+    /* clip-path: polygon(0% 10%, 100% 10%, 100% 80%, 0% 80%); */
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%); */
+    object-fit: cover;
+    /* Maintain the image's aspect ratio */
+    /* This centers the image both horizontally and vertically */
+    /* width: 100%; */
+    /* Optional: Set the width of the image container */
+    /* height: 100%; */
+    /* Optional: Set the height of the image container */
+}
+
+.container {
+    margin-top: 20px;
+    width: auto;
+    /* border: 1px solid; */
+}
+
+/* 
+.buttonContainer {
+    width: auto;
+} */
+
+/* .buttonContainer div {
+    border: 1px solid;
+    height: 200px;
+    width: 300px;
+} */
+
+.boxContainer {
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* width: 960px; */
+}
+
+.boxContain {
+    /* border: 1px solid; */
+    /* padding-top: 20px; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    width: 30rem;
+    height: 15rem;
+    margin: 20px 0;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
